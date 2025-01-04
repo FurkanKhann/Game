@@ -18,7 +18,7 @@ Click "Play Game" to start!
 if st.button("Play Game"):
     st.write("Launching the game... Enjoy!")
     # Path to the game script
-    game_script_path = os.path.join(os.getcwd(), "GAME\game2.py")
+    game_script_path = os.path.join(os.getcwd(), "GAME/game2.py")
     if os.path.exists(game_script_path):
         subprocess.Popen(["python", game_script_path])
     else:
